@@ -13,7 +13,7 @@ def main():
         print("3. 감정 통계 보기")
         print("4. 종료")
 
-        choice = input("번호를 선택해줘 > ")
+        choice = input("번호를 선택해주세요 > ")
 
         if choice == "1":
             date, emotion, content = get_user_input()
@@ -25,10 +25,10 @@ def main():
         elif choice == "3":
             view_emotion_stats()
         elif choice == "4":
-            print("안녕!")
+            print("내일봐요!")
             break
         else:
-            print("잘못된 선택이야. 다시 입력해줘.")
+            print("잘못된 선택입니다. 다시 입력해주세요.")
 
 
 def view_old_entry():
