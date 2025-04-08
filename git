@@ -1,0 +1,2 @@
+$ git config --global alias.branches '!f() { for b in $(git branch -r | grep -v "\\->"); do git branch --track "${b#origin/}" "$b"; done; }; f'
+$ git config --global alias.loga "log --oneline --graph --all"
